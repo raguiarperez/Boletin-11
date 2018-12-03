@@ -17,9 +17,9 @@ public class Instancia {
         inicio = System.nanoTime();
         String Escrito= JOptionPane.showInputDialog(frase, "ESCRIBE LA SIGUIENTE FRASE" + "\n A documentación é todo aquel conxunto de manuais impresos ou en formato dixital que explique unha aplicación informática.");
         fin = System.nanoTime();
+        if(frase.equals(Escrito)==true);
         float total = fin - inicio;
         DecimalFormat df = new DecimalFormat("#.00");
-        if(frase.equals(Escrito)==true);
         JOptionPane.showMessageDialog(null, "Tardaches " + (df.format(total / 1e9)) + " segundos en escribir a frase");
     }
 }
